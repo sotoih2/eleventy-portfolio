@@ -7,11 +7,11 @@ layout: layouts/base.njk
     <h1 class="post-title">{{ title }}</h1>
 
     {% if date %}
-      <p class="post-meta">
-        <time datetime="{{ date | date('yyyy-MM-dd') }}">
-          {{ date | date('MMMM d, yyyy') }}
-        </time>
-      </p>
+    <p class="post-meta">
+      <time datetime="{{ date | date('yyyy-MM-dd') }}">
+        {{ date | date('MMMM d, yyyy') }}
+      </time>
+    </p>
     {% endif %}
   </header>
 
@@ -20,6 +20,6 @@ layout: layouts/base.njk
   </div>
 
   <footer class="post-footer">
-    <a href="/blog/" class="back-link">← Back to Blog</a>
+    <a href="{{ '/blog/' | url }}" class="back-link">← Back to Blog</a>
   </footer>
 </article>

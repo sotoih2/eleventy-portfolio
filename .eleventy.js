@@ -21,6 +21,7 @@ export default function (eleventyConfig) {
 
   // Set input/output directories
   return {
+    pathPrefix: "/eleventy-portfolio/",
     dir: {
       input: "src",
       includes: "_includes",
@@ -28,6 +29,5 @@ export default function (eleventyConfig) {
       output: "_site",
     },
     htmlTemplateEngine: "njk",
-    pathPrefix: "./" // makes all links relative
   };
 }
