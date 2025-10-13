@@ -1,0 +1,11 @@
+<section class="hero">
+    <div class="hero-content">
+      <h1>{{ hero.title | default("Hi, I'm Rainbow Harrison") }}</h1>
+      <p>{{ hero.subtitle | default("Experienced Web Production Manager responsible for maintaining design and development quality.") }}</p>
+      
+      {% if hero.cta_text and hero.cta_link %}
+        <a href="{{ hero.cta_link }}" class="btn">{{ hero.cta_text }}</a>
+      {% endif %}
+    </div>
+  </section>
+  

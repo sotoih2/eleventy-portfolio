@@ -1,2 +1,4 @@
-# eleventy-portfolio
-Eleventy portfolio project
+---
+title: Eleventy Portfolio Test
+---
+# {{ title }}

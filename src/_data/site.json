@@ -1,0 +1,12 @@
+{
+  "name": "Rainbow Porfolio",
+  "title": "Creative Web Developer",
+  "description": "Minimal and clean portfolio showcasing creative freelance projects.",
+  "url": "https://yourdomain.com",
+  "email": "rainbow@spadget.com",
+  "social": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourusername"
+  }
+}

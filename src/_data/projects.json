@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Enterprise Ecosystem",
+      "description": "Full-stack web app.",
+      "link": "#",
+      "image": "/img/ecommerce-thumb.jpg"
+    },
+    {
+      "title": "Spadget Publishing Site",
+      "description": "Creative library publisher website.",
+      "link": "#",
+      "image": "/img/creative-landing-thumb.jpg"
+    },
+    {
+      "title": "Portfolio Site",
+      "description": "Personal Eleventy build.",
+      "link": "#",
+      "image": "/img/portfolio-thumb.jpg"
+    }
+  ]

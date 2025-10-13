@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+title: Work
+---
+
+{% include "partials/hero.njk" %}
+
+<h2>My Recent Projects</h2>
+
+<div class="project-grid">
+  {% for project in projects %}
+    {% include "components/project-card.njk" %}
+  {% endfor %}
+</div>

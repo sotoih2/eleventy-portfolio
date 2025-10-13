@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Home
+description: Welcome to my Rainbow Portfolio site!
+---
+
+{% include "partials/hero.njk" %}
+
+<section class="featured-work">
+  <h2>Featured Projects</h2>
+  <div class="grid">
+    {% set project = {title: "Spadget Publishing Site", description: "Creative library publisher website", link: "#"} %}
+    {% include "components/project-card.njk" %}
+
+    {% set project = {title: "Portfolio Site", description: "Personal Eleventy build", link: "#"} %}
+    {% include "components/project-card.njk" %}
+  </div>
+</section>
+
+<section class="cta-contact">
+  <p>Let's build something great together.</p>
+  <a href="/contact/" class="btn">Contact Me</a>
+</section>
