@@ -1,4 +1,7 @@
 import { DateTime } from "luxon";
+import dotenv from "dotenv";
+
+dotenv.config(); // load .env values
 
 export default function (eleventyConfig) {
   // Copy static files
@@ -19,9 +22,12 @@ export default function (eleventyConfig) {
   // Add a global "now" variable
   eleventyConfig.addGlobalData("now", new Date());
 
+  // Read from .env or fallback to "/"
+  const pathPrefix = process.env.PATH_PREFIX || "/";
+
   // Set input/output directories
   return {
-    pathPrefix: "/eleventy-portfolio/",
+    pathPrefix,
     dir: {
       input: "src",
       includes: "_includes",
