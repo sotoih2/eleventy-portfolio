@@ -3,7 +3,7 @@ name: Build and Deploy Eleventy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 permissions:
   contents: read
@@ -26,6 +26,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      
+      # Cache node_modules for faster builds
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: npm ci
